@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'MotorViabilidad.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'banco_db',
         'USER': 'banco_user',
         'PASSWORD': 'isis2503',
-        'HOST': 'localhost',  # or your PostgreSQL server's IP address
+        'HOST': '10.128.0.2',  # or your PostgreSQL server's IP address
         'PORT': '',  # default PostgreSQL port
     }
 }
